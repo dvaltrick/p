@@ -1,0 +1,8 @@
+ux-dialog-overlay.active {
+  background-color: black;
+  opacity: .5;
+}
+
+ux-dialog{
+  width: 700px;
+}

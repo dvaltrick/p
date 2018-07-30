@@ -1,0 +1,27 @@
+<template >
+  <require from="./styles.css"></require>
+  <require from="./login/login"></require>
+  <require from="toastr/build/toastr.min.css"></require>
+
+  <base></base>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Piero</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup" if.bind="logged">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" click.delegate="call('company')">Empresa <span class="sr-only">(current)</span></a>
+        </div>
+      </div>
+    </nav>
+
+  <div class="basecontainer"> 
+    <div class="row">
+      <router-view></router-view>
+    </div>
+  </div>
+
+</template>
+

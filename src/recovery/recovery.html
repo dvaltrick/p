@@ -1,0 +1,16 @@
+<template>
+  <require from="../styles.css" ></require>
+ 
+  <div class="data-container">
+      <h3 class="titulo">Recuperação de senha</h3>
+      <form>
+        <div class="form-group">
+          <label for="inPass">Nova Senha</label>
+          <input type="Password" class="form-control" value.bind="newPassword" id="inPass" name="inPass"></input>
+        </div>
+        <div class="form-group">
+          <button type="button" class="btn btn-primary" click.delegate="ChangePassword()"><i class="fa fa-check"></i> Alterar</button>    
+        </div>
+      </form>
+  </div>
+</template>
